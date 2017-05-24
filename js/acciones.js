@@ -21,10 +21,10 @@ function onDeviceReady(){
 	 
 	 var options ={
 		 enableHighAccuracy :true,
-		 maximunAge:3600000
+		 maximumAge:3600000
 	 }
 	 
- var watchID =navigator.geolocation.getCurrentPosition(onSuccess,onError,options);
+ var watchID=navigator.geolocation.getCurrentPosition(onSuccess,onError,options);
  
  function onSuccess(position){
 	 
@@ -65,7 +65,7 @@ $('#timestamp').html(position.timestamp);
 	 };
 	 
 function  onError(error){
-	alert('code:' +error.code +'\n'+ 'message:' +error.message +'\n');
+	alert('code:' +error.code +'\n'+'message:' +error.message +'\n');
 }
  }
 	 
